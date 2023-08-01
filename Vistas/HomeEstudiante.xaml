@@ -1,0 +1,127 @@
+﻿<Window x:Class="Login_Pape.Vistas.HomeEstudiante"
+        Title="HomeEstudiante" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True"
+        Background="Transparent" mc:Ignorable="d" Height="740" Width="1280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Left Menu-->
+        <Border CornerRadius="10 0 0 10" Background="White">
+
+            <StackPanel>
+                <!--Username-->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 35 0 0">
+                    <Border CornerRadius="10" Width="40" Height="40">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                                <GradientStop Color="#7F7CF1" Offset="0" />
+                                <GradientStop Color="#D3B7FF" Offset="1" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <TextBlock x:Name="Iniciales" Text="NA" Foreground="#000" FontSize="22" FontWeight="SemiBold" TextAlignment="Center" VerticalAlignment="Center" Margin="3 0 0 2"/>
+                    </Border>
+
+                    <StackPanel Margin="10 0 0 0" VerticalAlignment="Center">
+                        <TextBlock Text="Nombre Apellido" FontSize="15" Margin="0 0 0 5" Foreground="#000"/>
+                        <TextBlock Text="Version 1.0.0" Foreground="#000" FontSize="11"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <Separator Height="0.8" Background="#46558a" Margin="20 30 20 30"/>
+
+                <StackPanel Height="463">
+                    <Button BorderBrush="Black" Background="Black">
+                        <TextBlock Height="50" >
+                        <Image Source="/Images/close.png" Stretch="None" />
+                        <Label x:Name="Documentacion" Height="50" Width="186" Content="Mi Cuenta" FontSize="18" Foreground="White" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                        </TextBlock>
+                    </Button>
+                    <Button BorderBrush="Black" Margin="0,25,0,0" Background="Black">
+                        <TextBlock Height="50" >
+                        <Image Source="/Images/close.png" Stretch="None" />
+                        <Label x:Name="GenerarFicha" Height="50" Width="188" Content="Calificaciones" FontSize="18" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                        </TextBlock>
+                    </Button>
+                    <Button BorderBrush="Black" Margin="0,25,0,0" Background="Black">
+                        <UIElement.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </UIElement.RenderTransform>
+                        <TextBlock Height="50" >
+                        <Image Source="/Images/close.png" Stretch="None" />
+                        <Label x:Name="PagoFicha" Height="50" Width="188" Content="Asistencias" FontSize="18" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                        </TextBlock>
+                    </Button>
+                    <Button BorderBrush="Black" Margin="0,25,0,0" Background="Black">
+                        <UIElement.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </UIElement.RenderTransform>
+                        <TextBlock Height="50" >
+                        <Image Source="/Images/close.png" Stretch="None" />
+                        <Label x:Name="Tareas" Height="50" Width="188" Content="Tareas" FontSize="18" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                        </TextBlock>
+                    </Button>
+                    <Button BorderBrush="Black" Margin="0,25,0,0" Background="Black">
+                        <UIElement.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </UIElement.RenderTransform>
+                        <TextBlock Height="50" >
+                        <Image Source="/Images/close.png" Stretch="None" />
+                        <Label x:Name="Recursos" Height="50" Width="188" Content="Material Academico" FontSize="18" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                        </TextBlock>
+                    </Button>
+                    <Button BorderBrush="Black" Margin="0,25,0,0" Click="Button_Click_1" Background="Black">
+                        <UIElement.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </UIElement.RenderTransform>
+                        <TextBlock Height="50" >
+                        <Image Source="/Images/close.png" Stretch="None" />
+                        <Label x:Name="Salir" Height="50" Width="188" Content="Cerrar Sesion" FontSize="18" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                        </TextBlock>
+                    </Button>
+                </StackPanel>
+
+                <!--Menu Buttons-->
+
+            </StackPanel>
+        </Border>
+
+        <!--Main Section-->
+        <Border Grid.Column="1" CornerRadius="0 10 10 0" Background="White">
+
+            <Grid>
+                <!--Title-->
+                <TextBlock FontSize="26" Foreground="#000" Margin="36,35,0,648" Text="Hola Estudiante, bienvenido!" HorizontalAlignment="Left" Width="895"/>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>
